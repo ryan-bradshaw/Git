@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond;
+}
+
+h1, h3, p, figcaption{
+    text-align: center;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+

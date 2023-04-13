@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Only limited styling has been added, not finished, see commments throughout -->
+    <title>Survey Form - freeCodeCamp</title>
+</head>
+    <body>
+        <div class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <div class="main">
+            <form id="survey-form" action="post">
+                <fieldset class="form-upper">
+                    <label for="name" id="name-label"> Name <input id="name" name="name" type="text" placeholder="James Bond" required></label>
+                    <label for="email" id="email-label"> Email <input id="email" name="email" type="email" placeholder="agent007@mi6.uk.gov" required></label>
+                    <label for="number" id="number-label"> Age <input id="number" name ="age" type="number" min="13" max="120" placeholder="36"></label>
+                    <label for="current-role" id="current-role-label"> Current Role <select id="dropdown" name="current-role" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Professional</option>
+                        <option value="3">Other</option>
+                    </select></label>
+                </fieldset>
+                <fieldset>
+                    <fieldset>
+                        <!-- need to align the radio/checkboxes to labels, reduce top margin of this area only -->
+                        <label for="recommend"> Would you recommend freeCodeCamp to a friend?
+                            <input id="recommend" name ="recommend" type="radio" value="1" required> Yes
+                            <input id="recommend" name ="recommend" type="radio" value="0" required> Maybe
+                            <input id="recommend" name ="recommend" type="radio" value="-1" required> No
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <!-- middle align labels and checkboxes  -->
+                        <p>What do you want to see more content about on freeCodeCamp?</p>
+                            <label for="python"><input id="python" class="checkboxes" name ="checkboxes" type="checkbox" value="Python"> Python </label>
+                            <label for="javascript"><input id="javascript" class="checkboxes" name ="checkboxes" type="checkbox" value="Javascript"> Javascript </label>
+                            <label for="sql"><input id="sql" class="checkboxes" name ="checkboxes" type="checkbox" value="SQL"> SQL </label>
+                            <label for="mongodb"><input id="mongodb" class="checkboxes" name ="checkboxes" type="checkbox" value="MongoDB"> MongoDB </label>
+                            <label for="government"><input id="government" class="checkboxes" name ="checkboxes" type="checkbox" value="government"> How to hack the government </label>
+                    </fieldset>
+                </fieldset>
+                <label for="comments">Anything else you'd like to tell us?
+                    <textarea id="comments" name="comments" rows="5" cols="30" placeholder="I really like the YouTube video examples and..."></textarea>
+                </label>
+                <input id="submit" type="submit">
+            </form>
+        </div>
+    </body>
+</html>
